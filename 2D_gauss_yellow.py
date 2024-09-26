@@ -117,7 +117,6 @@ def main():
         success, frame = cap.read()
         if not success:
             break    
-
         processed_frame = process_frame(frame, K, weights, parameters)
         images.append(processed_frame)
         cv2.imshow("Final output", processed_frame)
