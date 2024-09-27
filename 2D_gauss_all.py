@@ -36,7 +36,7 @@ def gmm(data, K):
     parameters = [initialize(data, n_obs) for _ in range(K)]
     mix_c = np.ones(K) / K
     log_likelihoods = []
-
+    
     for itr in range(max_itr):
         print(f"Iteration {itr}")
         
